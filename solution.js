@@ -481,7 +481,41 @@ var plusOne = function (digits) {
 };
 
 // Test cases
-console.log(JSON.stringify(plusOne([1, 2, 9])));
-console.log(JSON.stringify(plusOne([4, 3, 2, 1])));
-console.log(JSON.stringify(plusOne([9, 9, 9])));
+// console.log(JSON.stringify(plusOne([1, 2, 9])));
+// console.log(JSON.stringify(plusOne([4, 3, 2, 1])));
+// console.log(JSON.stringify(plusOne([9, 9, 9])));
+
+
+
+/**
+ * Problem 18: Reverse String
+ *
+ * @param {string[]} s
+ * @return {void}
+ */
+var reverseString = function (s) {
+    let left = 0;
+    let right = s.length - 1;
+
+    while (left < right) {
+        // Swap the characters at both ends
+        const temp = s[left];
+        s[left] = s[right];
+        s[right] = temp;
+
+        left++;
+        right--;
+    }
+};
+
+// Test cases
+const s1 = ["h", "e", "l", "l", "o"];
+reverseString(s1);
+console.log(JSON.stringify(s1));
+
+const s2 = ["H", "a", "n", "n", "a", "h"];
+reverseString(s2);
+console.log(JSON.stringify(s2));
+
+
 
