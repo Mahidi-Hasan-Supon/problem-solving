@@ -227,3 +227,33 @@ var runningSum = function (nums) {
 // console.log(JSON.stringify(runningSum([1, 2, 3, 4])));
 // console.log(JSON.stringify(runningSum([1, 1, 1, 1, 1])));
 
+
+
+/**
+ * Problem 11: Richest Customer Wealth
+ *
+ * @param {number[][]} accounts
+ * @return {number}
+ */
+var maximumWealth = function (accounts) {
+    let maxWealth = 0;
+
+    for (const account of accounts) {
+        const totalWealth = account.reduce((sum, money) => sum + money, 0);
+
+        if (totalWealth > maxWealth) {
+            maxWealth = totalWealth;
+        }
+    }
+
+    return maxWealth;
+};
+
+// Test cases
+// console.log(maximumWealth([[1, 2, 3], [3, 2, 1]]));
+// console.log(maximumWealth([[1, 5], [7, 3], [3, 5]]));
+
+
+
+
+
