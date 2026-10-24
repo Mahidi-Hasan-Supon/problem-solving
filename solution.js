@@ -519,3 +519,33 @@ console.log(JSON.stringify(s2));
 
 
 
+/**
+ * Problem 19: Length of Last Word
+ *
+ * @param {string} s
+ * @return {number}
+ */
+var lengthOfLastWord = function (s) {
+    let i = s.length - 1;
+
+    // Skip trailing spaces
+    while (i >= 0 && s[i] === " ") {
+        i--;
+    }
+
+    let length = 0;
+
+    // Count characters in the last word
+    while (i >= 0 && s[i] !== " ") {
+        length++;
+        i--;
+    }
+
+    return length;
+};
+
+// Test cases
+console.log(lengthOfLastWord("Hello World"));
+console.log(lengthOfLastWord("  fly me   to   the moon  "));
+console.log(lengthOfLastWord("luffy is still joyboy"));
+
