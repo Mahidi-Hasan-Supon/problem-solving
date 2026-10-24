@@ -200,6 +200,30 @@ var fizzBuzz = function (n) {
 };
 
 // Test cases
-console.log(JSON.stringify(fizzBuzz(5)));
-console.log(JSON.stringify(fizzBuzz(15)));
+// console.log(JSON.stringify(fizzBuzz(5)));
+// console.log(JSON.stringify(fizzBuzz(15)));
+
+
+
+/**
+ * Problem 10: Running Sum of 1D Array
+ *
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+var runningSum = function (nums) {
+    const result = [];
+    let sum = 0;
+
+    for (let i = 0; i < nums.length; i++) {
+        sum += nums[i];
+        result.push(sum);
+    }
+
+    return result;
+};
+
+// Test cases
+// console.log(JSON.stringify(runningSum([1, 2, 3, 4])));
+// console.log(JSON.stringify(runningSum([1, 1, 1, 1, 1])));
 
