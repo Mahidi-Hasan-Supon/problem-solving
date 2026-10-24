@@ -312,8 +312,52 @@ var containsDuplicate = function (nums) {
 };
 
 // Test cases
-console.log(containsDuplicate([1, 2, 3, 1]));
-console.log(containsDuplicate([1, 2, 3, 4]));
-console.log(containsDuplicate([1, 1, 1, 3, 3, 4, 3, 2, 4, 2]));
+// console.log(containsDuplicate([1, 2, 3, 1]));
+// console.log(containsDuplicate([1, 2, 3, 4]));
+// console.log(containsDuplicate([1, 1, 1, 3, 3, 4, 3, 2, 4, 2]));
+
+
+
+/**
+ * Problem 14: Move Zeroes
+ *
+ * @param {number[]} nums
+ * @return {void}
+ */
+var moveZeroes = function (nums) {
+    let position = 0;
+
+    // Move all non-zero elements to the front
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] !== 0) {
+            nums[position] = nums[i];
+            position++;
+        }
+    }
+
+    // Fill the remaining positions with zeros
+    while (position < nums.length) {
+        nums[position] = 0;
+        position++;
+    }
+};
+
+// Test cases
+const nums1 = [0, 1, 0, 3, 12];
+moveZeroes(nums1);
+console.log(nums1);
+
+const nums2 = [0, 0, 1];
+moveZeroes(nums2);
+console.log(nums2);
+
+const nums3 = [1, 2, 3];
+moveZeroes(nums3);
+console.log(nums3);
+
+
+
+
+
 
 
