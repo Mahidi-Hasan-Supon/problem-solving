@@ -343,20 +343,61 @@ var moveZeroes = function (nums) {
 };
 
 // Test cases
-const nums1 = [0, 1, 0, 3, 12];
-moveZeroes(nums1);
+// const nums1 = [0, 1, 0, 3, 12];
+// moveZeroes(nums1);
+// console.log(nums1);
+
+// const nums2 = [0, 0, 1];
+// moveZeroes(nums2);
+// console.log(nums2);
+
+// const nums3 = [1, 2, 3];
+// moveZeroes(nums3);
+// console.log(nums3);
+
+
+
+
+/**
+ * Problem 15: Merge Sorted Array
+ *
+ * @param {number[]} nums1
+ * @param {number} m
+ * @param {number[]} nums2
+ * @param {number} n
+ * @return {void}
+ */
+var merge = function (nums1, m, nums2, n) {
+    let i = m - 1;
+    let j = n - 1;
+    let k = m + n - 1;
+
+    // Merge from the end to avoid overwriting valid elements
+    while (j >= 0) {
+        if (i >= 0 && nums1[i] > nums2[j]) {
+            nums1[k] = nums1[i];
+            i--;
+        } else {
+            nums1[k] = nums2[j];
+            j--;
+        }
+
+        k--;
+    }
+};
+
+// Test cases
+const nums1 = [1, 2, 3, 0, 0, 0];
+merge(nums1, 3, [2, 5, 6], 3);
 console.log(nums1);
 
-const nums2 = [0, 0, 1];
-moveZeroes(nums2);
+const nums2 = [1];
+merge(nums2, 1, [], 0);
 console.log(nums2);
 
-const nums3 = [1, 2, 3];
-moveZeroes(nums3);
+const nums3 = [0];
+merge(nums3, 0, [1], 1);
 console.log(nums3);
-
-
-
 
 
 
