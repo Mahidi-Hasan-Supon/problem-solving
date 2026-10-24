@@ -387,18 +387,71 @@ var merge = function (nums1, m, nums2, n) {
 };
 
 // Test cases
-const nums1 = [1, 2, 3, 0, 0, 0];
-merge(nums1, 3, [2, 5, 6], 3);
-console.log(nums1);
+// const nums1 = [1, 2, 3, 0, 0, 0];
+// merge(nums1, 3, [2, 5, 6], 3);
+// console.log(nums1);
 
-const nums2 = [1];
-merge(nums2, 1, [], 0);
-console.log(nums2);
+// const nums2 = [1];
+// merge(nums2, 1, [], 0);
+// console.log(nums2);
 
-const nums3 = [0];
-merge(nums3, 0, [1], 1);
-console.log(nums3);
+// const nums3 = [0];
+// merge(nums3, 0, [1], 1);
+// console.log(nums3);
 
 
 
+
+/**
+ * Problem 16: 3Sum
+ *
+ * @param {number[]} nums
+ * @return {number[][]}
+ */
+var threeSum = function (nums) {
+    nums.sort((a, b) => a - b);
+
+    const result = [];
+
+    for (let i = 0; i < nums.length - 2; i++) {
+        // Skip duplicate first elements
+        if (i > 0 && nums[i] === nums[i - 1]) {
+            continue;
+        }
+
+        let left = i + 1;
+        let right = nums.length - 1;
+
+        while (left < right) {
+            const sum = nums[i] + nums[left] + nums[right];
+
+            if (sum === 0) {
+                result.push([nums[i], nums[left], nums[right]]);
+
+                left++;
+                right--;
+
+                // Skip duplicate left and right elements
+                while (left < right && nums[left] === nums[left - 1]) {
+                    left++;
+                }
+
+                while (left < right && nums[right] === nums[right + 1]) {
+                    right--;
+                }
+            } else if (sum < 0) {
+                left++;
+            } else {
+                right--;
+            }
+        }
+    }
+
+    return result;
+};
+
+// Test cases
+console.log(JSON.stringify(threeSum([-1, 0, 1, 2, -1, -4])));
+console.log(JSON.stringify(threeSum([0, 1, 1])));
+console.log(JSON.stringify(threeSum([0, 0, 0])));
 
