@@ -49,9 +49,9 @@ var gradingStudents = function (grades) {
 };
 
 // Test cases
-// console.log(gradingStudents([73, 67, 38, 33]));
-// console.log(gradingStudents([84, 29, 57]));
-// console.log(gradingStudents([37, 38, 39, 40, 41, 42]));
+console.log(gradingStudents([73, 67, 38, 33]));
+console.log(gradingStudents([84, 29, 57]));
+console.log(gradingStudents([37, 38, 39, 40, 41, 42]));
 
 
 
@@ -81,11 +81,11 @@ var timeConversion = function (s) {
 };
 
 // Test cases
-// console.log(timeConversion("07:05:45PM"));
-// console.log(timeConversion("12:00:00AM"));
-// console.log(timeConversion("12:30:45PM"));
-// console.log(timeConversion("01:00:00AM"));
-// console.log(timeConversion("11:59:59PM"));
+console.log(timeConversion("07:05:45PM"));
+console.log(timeConversion("12:00:00AM"));
+console.log(timeConversion("12:30:45PM"));
+console.log(timeConversion("01:00:00AM"));
+console.log(timeConversion("11:59:59PM"));
 
 
 
@@ -101,10 +101,10 @@ var repeatStr = function (n, s) {
 };
 
 // Test cases
-// console.log(repeatStr(3, "ha"));
-// console.log(repeatStr(0, "hello"));
-// console.log(repeatStr(4, "a"));
-// console.log(repeatStr(3, ""));
+console.log(repeatStr(3, "ha"));
+console.log(repeatStr(0, "hello"));
+console.log(repeatStr(4, "a"));
+console.log(repeatStr(3, ""));
 
 
 
@@ -120,9 +120,9 @@ var solution = function (str) {
 };
 
 // Test cases
-// console.log(solution("world"));
-// console.log(solution("hello"));
-// console.log(solution(""));
+console.log(solution("world"));
+console.log(solution("hello"));
+console.log(solution(""));
 
 
 
@@ -139,8 +139,8 @@ var positiveSum = function (arr) {
 };
 
 // Test cases
-// console.log(positiveSum([1, -4, 7, 12]));
-// console.log(positiveSum([-1, -2, 0, -5]));
+console.log(positiveSum([1, -4, 7, 12]));
+console.log(positiveSum([-1, -2, 0, -5]));
 
 
 
@@ -155,8 +155,8 @@ var summation = function (num) {
 };
 
 // Test cases
-// console.log(summation(8));
-// console.log(summation(1));
+console.log(summation(8));
+console.log(summation(1));
 
 
 
@@ -171,8 +171,8 @@ var booleanToString = function (b) {
 };
 
 // Test cases
-// console.log(booleanToString(true));
-// console.log(booleanToString(false));
+console.log(booleanToString(true));
+console.log(booleanToString(false));
 
 
 /**
@@ -200,8 +200,8 @@ var fizzBuzz = function (n) {
 };
 
 // Test cases
-// console.log(JSON.stringify(fizzBuzz(5)));
-// console.log(JSON.stringify(fizzBuzz(15)));
+console.log(JSON.stringify(fizzBuzz(5)));
+console.log(JSON.stringify(fizzBuzz(15)));
 
 
 
@@ -224,8 +224,8 @@ var runningSum = function (nums) {
 };
 
 // Test cases
-// console.log(JSON.stringify(runningSum([1, 2, 3, 4])));
-// console.log(JSON.stringify(runningSum([1, 1, 1, 1, 1])));
+console.log(JSON.stringify(runningSum([1, 2, 3, 4])));
+console.log(JSON.stringify(runningSum([1, 1, 1, 1, 1])));
 
 
 
@@ -250,8 +250,8 @@ var maximumWealth = function (accounts) {
 };
 
 // Test cases
-// console.log(maximumWealth([[1, 2, 3], [3, 2, 1]]));
-// console.log(maximumWealth([[1, 5], [7, 3], [3, 5]]));
+console.log(maximumWealth([[1, 2, 3], [3, 2, 1]]));
+console.log(maximumWealth([[1, 5], [7, 3], [3, 5]]));
 
 
 
@@ -281,12 +281,12 @@ var removeDuplicates = function (nums) {
 
 // Test cases
 const nums1 = [1, 1, 2];
-// console.log(removeDuplicates(nums1));
-// console.log(nums1.slice(0, 2));
+console.log(removeDuplicates(nums1));
+console.log(nums1.slice(0, 2));
 
 const nums2 = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
-// console.log(removeDuplicates(nums2));
-// console.log(nums2.slice(0, 5));
+console.log(removeDuplicates(nums2));
+console.log(nums2.slice(0, 5));
 
 
 
@@ -312,9 +312,9 @@ var containsDuplicate = function (nums) {
 };
 
 // Test cases
-// console.log(containsDuplicate([1, 2, 3, 1]));
-// console.log(containsDuplicate([1, 2, 3, 4]));
-// console.log(containsDuplicate([1, 1, 1, 3, 3, 4, 3, 2, 4, 2]));
+console.log(containsDuplicate([1, 2, 3, 1]));
+console.log(containsDuplicate([1, 2, 3, 4]));
+console.log(containsDuplicate([1, 1, 1, 3, 3, 4, 3, 2, 4, 2]));
 
 
 
@@ -344,16 +344,16 @@ var moveZeroes = function (nums) {
 
 // Test cases
 const nums3 = [0, 1, 0, 3, 12];
-// moveZeroes(nums3);
-// console.log(nums3);
+moveZeroes(nums3);
+console.log(nums3);
 
 const nums4 = [0, 0, 1];
-// moveZeroes(nums4);
-// console.log(nums4);
+moveZeroes(nums4);
+console.log(nums4);
 
 const nums5 = [1, 2, 3];
-// moveZeroes(nums5);
-// console.log(nums5);
+moveZeroes(nums5);
+console.log(nums5);
 
 
 
@@ -389,15 +389,15 @@ var merge = function (nums1, m, nums2, n) {
 // Test cases
 const nums6 = [1, 2, 3, 0, 0, 0];
 merge(nums6, 3, [2, 5, 6], 3);
-// console.log(nums6);
+console.log(nums6);
 
 const nums7 = [1];
 merge(nums7, 1, [], 0);
-// console.log(nums7);
+console.log(nums7);
 
 const nums8 = [0];
 merge(nums8, 0, [1], 1);
-// console.log(nums8);
+console.log(nums8);
 
 
 
@@ -451,9 +451,9 @@ var threeSum = function (nums) {
 };
 
 // Test cases
-// console.log(JSON.stringify(threeSum([-1, 0, 1, 2, -1, -4])));
-// console.log(JSON.stringify(threeSum([0, 1, 1])));
-// console.log(JSON.stringify(threeSum([0, 0, 0])));
+console.log(JSON.stringify(threeSum([-1, 0, 1, 2, -1, -4])));
+console.log(JSON.stringify(threeSum([0, 1, 1])));
+console.log(JSON.stringify(threeSum([0, 0, 0])));
 
 
 
@@ -481,9 +481,9 @@ var plusOne = function (digits) {
 };
 
 // Test cases
-// console.log(JSON.stringify(plusOne([1, 2, 9])));
-// console.log(JSON.stringify(plusOne([4, 3, 2, 1])));
-// console.log(JSON.stringify(plusOne([9, 9, 9])));
+console.log(JSON.stringify(plusOne([1, 2, 9])));
+console.log(JSON.stringify(plusOne([4, 3, 2, 1])));
+console.log(JSON.stringify(plusOne([9, 9, 9])));
 
 
 
@@ -545,9 +545,9 @@ var lengthOfLastWord = function (s) {
 };
 
 // Test cases
-// console.log(lengthOfLastWord("Hello World"));
-// console.log(lengthOfLastWord("  fly me   to   the moon  "));
-// console.log(lengthOfLastWord("luffy is still joyboy"));
+console.log(lengthOfLastWord("Hello World"));
+console.log(lengthOfLastWord("  fly me   to   the moon  "));
+console.log(lengthOfLastWord("luffy is still joyboy"));
 
 
 
@@ -578,6 +578,6 @@ var longestCommonPrefix = function (strs) {
 };
 
 // Test cases
-// console.log(longestCommonPrefix(["flower", "flow", "flight"]));
-// console.log(longestCommonPrefix(["dog", "racecar", "car"]));
-// console.log(longestCommonPrefix(["interspecies", "interstellar", "interstate"]));
+console.log(longestCommonPrefix(["flower", "flow", "flight"]));
+console.log(longestCommonPrefix(["dog", "racecar", "car"]));
+console.log(longestCommonPrefix(["interspecies", "interstellar", "interstate"]));
