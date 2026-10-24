@@ -1,0 +1,23 @@
+{
+  "name": "problem-solving",
+  "version": "1.0.0",
+  "description": "",
+  "main": "solution.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mahidi-Hasan-Supon/problem-solving.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mahidi-Hasan-Supon/problem-solving/issues"
+  },
+  "homepage": "https://github.com/Mahidi-Hasan-Supon/problem-solving#readme",
+  "dependencies": {
+    "node": "^26.12.1"
+  }
+}
