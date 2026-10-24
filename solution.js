@@ -18,9 +18,9 @@ var staircase = function (n) {
 };
 
 // Test cases
-// console.log(staircase(4));
-// console.log(staircase(1));
-// console.log(staircase(5));
+console.log(staircase(4));
+console.log(staircase(1));
+console.log(staircase(5));
 
 
 
@@ -280,11 +280,11 @@ var removeDuplicates = function (nums) {
 };
 
 // Test cases
-// const nums1 = [1, 1, 2];
+const nums1 = [1, 1, 2];
 // console.log(removeDuplicates(nums1));
 // console.log(nums1.slice(0, 2));
 
-// const nums2 = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
+const nums2 = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
 // console.log(removeDuplicates(nums2));
 // console.log(nums2.slice(0, 5));
 
@@ -343,17 +343,17 @@ var moveZeroes = function (nums) {
 };
 
 // Test cases
-// const nums1 = [0, 1, 0, 3, 12];
-// moveZeroes(nums1);
-// console.log(nums1);
-
-// const nums2 = [0, 0, 1];
-// moveZeroes(nums2);
-// console.log(nums2);
-
-// const nums3 = [1, 2, 3];
+const nums3 = [0, 1, 0, 3, 12];
 // moveZeroes(nums3);
 // console.log(nums3);
+
+const nums4 = [0, 0, 1];
+// moveZeroes(nums4);
+// console.log(nums4);
+
+const nums5 = [1, 2, 3];
+// moveZeroes(nums5);
+// console.log(nums5);
 
 
 
@@ -387,17 +387,17 @@ var merge = function (nums1, m, nums2, n) {
 };
 
 // Test cases
-// const nums1 = [1, 2, 3, 0, 0, 0];
-// merge(nums1, 3, [2, 5, 6], 3);
-// console.log(nums1);
+const nums6 = [1, 2, 3, 0, 0, 0];
+merge(nums6, 3, [2, 5, 6], 3);
+// console.log(nums6);
 
-// const nums2 = [1];
-// merge(nums2, 1, [], 0);
-// console.log(nums2);
+const nums7 = [1];
+merge(nums7, 1, [], 0);
+// console.log(nums7);
 
-// const nums3 = [0];
-// merge(nums3, 0, [1], 1);
-// console.log(nums3);
+const nums8 = [0];
+merge(nums8, 0, [1], 1);
+// console.log(nums8);
 
 
 
@@ -578,6 +578,6 @@ var longestCommonPrefix = function (strs) {
 };
 
 // Test cases
-console.log(longestCommonPrefix(["flower", "flow", "flight"]));
-console.log(longestCommonPrefix(["dog", "racecar", "car"]));
-console.log(longestCommonPrefix(["interspecies", "interstellar", "interstate"]));
+// console.log(longestCommonPrefix(["flower", "flow", "flight"]));
+// console.log(longestCommonPrefix(["dog", "racecar", "car"]));
+// console.log(longestCommonPrefix(["interspecies", "interstellar", "interstate"]));
