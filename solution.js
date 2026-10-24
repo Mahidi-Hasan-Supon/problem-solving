@@ -545,7 +545,39 @@ var lengthOfLastWord = function (s) {
 };
 
 // Test cases
-console.log(lengthOfLastWord("Hello World"));
-console.log(lengthOfLastWord("  fly me   to   the moon  "));
-console.log(lengthOfLastWord("luffy is still joyboy"));
+// console.log(lengthOfLastWord("Hello World"));
+// console.log(lengthOfLastWord("  fly me   to   the moon  "));
+// console.log(lengthOfLastWord("luffy is still joyboy"));
 
+
+
+/**
+ * Problem 20: Longest Common Prefix
+ *
+ * @param {string[]} strs
+ * @return {string}
+ */
+var longestCommonPrefix = function (strs) {
+    if (strs.length === 0) {
+        return "";
+    }
+
+    let prefix = strs[0];
+
+    for (let i = 1; i < strs.length; i++) {
+        while (!strs[i].startsWith(prefix)) {
+            prefix = prefix.slice(0, -1);
+
+            if (prefix === "") {
+                return "";
+            }
+        }
+    }
+
+    return prefix;
+};
+
+// Test cases
+console.log(longestCommonPrefix(["flower", "flow", "flight"]));
+console.log(longestCommonPrefix(["dog", "racecar", "car"]));
+console.log(longestCommonPrefix(["interspecies", "interstellar", "interstate"]));
