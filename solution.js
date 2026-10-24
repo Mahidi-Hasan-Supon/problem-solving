@@ -451,7 +451,37 @@ var threeSum = function (nums) {
 };
 
 // Test cases
-console.log(JSON.stringify(threeSum([-1, 0, 1, 2, -1, -4])));
-console.log(JSON.stringify(threeSum([0, 1, 1])));
-console.log(JSON.stringify(threeSum([0, 0, 0])));
+// console.log(JSON.stringify(threeSum([-1, 0, 1, 2, -1, -4])));
+// console.log(JSON.stringify(threeSum([0, 1, 1])));
+// console.log(JSON.stringify(threeSum([0, 0, 0])));
+
+
+
+
+/**
+ * Problem 17: Plus One
+ *
+ * @param {number[]} digits
+ * @return {number[]}
+ */
+var plusOne = function (digits) {
+    for (let i = digits.length - 1; i >= 0; i--) {
+        if (digits[i] < 9) {
+            digits[i]++;
+            return digits;
+        }
+
+        digits[i] = 0;
+    }
+
+    // If every digit was 9, add a leading 1
+    digits.unshift(1);
+
+    return digits;
+};
+
+// Test cases
+console.log(JSON.stringify(plusOne([1, 2, 9])));
+console.log(JSON.stringify(plusOne([4, 3, 2, 1])));
+console.log(JSON.stringify(plusOne([9, 9, 9])));
 
